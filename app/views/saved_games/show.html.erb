@@ -1,8 +1,14 @@
+<!-- app/views/saved_games/show.html.erb -->
+
+<%= javascript_pack_tag 'hello_react' %>
+
 <h1><%= @saved_game.name %></h1>
 
 <div>
   <h2>Game Data:</h2>
   <pre><%= @saved_game.data %></pre>
 </div>
+
+<div id="game-pad-container"></div>
 
 <%= link_to 'Back to Saved Games', saved_games_path %>
